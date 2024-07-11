@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 
-RequestMapping(" /calculator")
+RequestMapping("/calculator");
 RestController
 public class CalculatorController {
     private final CalculatorService calculatorService;
@@ -18,7 +18,7 @@ public class CalculatorController {
         return "Добро пожаловать в калькулятор";
     }
     GetMapping("/plus")
-    public String plus(RequestParam (name = "a") int num1,RequestParam(name = "b") int num2) {
+    public String plus(RequestParam(name = "a")int num1,RequestParam(name = "b") int num2) {
         var result = calculatorService.plus(num1, num2);
         return num1 + " + " + num2 + " = " + result;
     }
