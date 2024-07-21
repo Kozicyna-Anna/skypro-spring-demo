@@ -1,7 +1,7 @@
 package pro.sky.skyprospringdemo;
 
 import org.springframework.stereotype.Service;
-Service
+@Service
 public class CalculatorService {
     public int plus(int a, int b ) {
         return a + b;
